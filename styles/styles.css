@@ -6,14 +6,14 @@
 }
 
 button {
-border: none;
-border-radius: 10px;
-background-color: rgb(105, 110, 240);
-padding: 10px, 20px;
-cursor: pointer;
-transistion: all 1s ease;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(105, 110, 240);
+  padding: 10px 20px; /* Changed comma to space */
+  cursor: pointer;
+  transition: all 1s ease; /* Corrected 'transistion' to 'transition' */
 }
 
 button:hover {
-background-color: rgb(90, 90, 90);
+  background-color: rgb(90, 90, 90);
 }
