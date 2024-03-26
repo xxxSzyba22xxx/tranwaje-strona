@@ -8,5 +8,12 @@
 button {
 border: none;
 border-radius: 10px;
-background-color: rgb();
+background-color: rgb(105, 110, 240);
+padding: 10px, 20px;
+cursor: pointer;
+transistion: all 1s ease;
+}
+
+button:hover {
+background-color: rgb(90, 90, 90);
 }
