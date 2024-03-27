@@ -11,9 +11,12 @@ button {
   background-color: rgb(105, 110, 240);
   padding: 10px 20px; /* Changed comma to space */
   cursor: pointer;
-  transition: all 1s ease; /* Corrected 'transistion' to 'transition' */
+  transition: all 1s ease;
+  box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
   background-color: rgb(90, 90, 90);
+  box-shadow: rgba(80, 80, 80, 0.5);
 }
+
