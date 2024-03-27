@@ -23,6 +23,7 @@
   width: 100%; /* Przykład, rozciąga .cookies na całą szerokość kontenera */
   height: 50px; /* Przykład, dostosuj wysokość do potrzeb */
   border: none;
+  background-color: rgba(80, 80, 80, 0.6);
 }
 
 body {
