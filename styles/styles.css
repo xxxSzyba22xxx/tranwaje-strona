@@ -5,6 +5,10 @@
   float: right; /* Ustawienie elementu z prawej strony */
 }
 
+#top a {
+  margin-left: 5px;
+}
+
 /* Zakładając, że .container to kontener, w którym ma być umieszczony .cookies */
 #container {
   display: block
