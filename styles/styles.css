@@ -5,6 +5,21 @@
   float: right; /* Ustawienie elementu z prawej strony */
 }
 
+/* Zakładając, że .container to kontener, w którym ma być umieszczony .cookies */
+#container {
+  position: relative; /* Umożliwia absolutne pozycjonowanie .cookies względem tego kontenera */
+  height: 100%; /* Przykład, dostosuj do potrzeb */
+}
+
+.cookies {
+  position: absolute;
+  bottom: 0; /* Umieszcza .cookies na dole kontenera */
+  left: 0; /* Dla przykładu, aby .cookies zaczynał się od lewej strony kontenera */
+  width: 100%; /* Przykład, rozciąga .cookies na całą szerokość kontenera */
+  height: 50px; /* Przykład, dostosuj wysokość do potrzeb */
+  border: none;
+}
+
 button {
   border: none;
   border-radius: 10px;
@@ -18,5 +33,31 @@ button {
 button:hover {
   background-color: rgb(90, 90, 90);
   box-shadow: rgba(80, 80, 80, 0.5);
+}
+
+a {
+  color: rgb(145, 145, 145);
+  text-decoration: none;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(90, 90, 90);
+  color: white;
+  transition: all 1s ease;
+  cursor: pointer;
+  padding: 10px;
+}
+
+input:hover {
+  border: rgb(90, 90, 90);
 }
 
