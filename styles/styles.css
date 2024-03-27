@@ -1,6 +1,6 @@
 #top {
-  background-color: #ffffff; /* Biały kolor tła */
-  color: #000000; /* Czarny kolor tekstu */
+  background-color: rgba(80, 80, 80, 0.7);
+  color: #fff; /* Czarny kolor tekstu */
   padding: 10px; /* Wewnętrzny odstęp dla lepszego wyglądu */
   float: left; /* Ustawienie elementu z prawej strony */
 }
