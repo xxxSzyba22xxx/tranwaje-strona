@@ -7,8 +7,13 @@
 
 /* Zakładając, że .container to kontener, w którym ma być umieszczony .cookies */
 #container {
-  position: relative; /* Umożliwia absolutne pozycjonowanie .cookies względem tego kontenera */
-  height: 100%; /* Przykład, dostosuj do potrzeb */
+  display: block
+  position: relative;
+  height: 50%;
+  width: 50%
+  background-color: rgba(80, 80, 80, 0.6);
+  border: none;
+  border-radius: 10px;
 }
 
 .cookies {
