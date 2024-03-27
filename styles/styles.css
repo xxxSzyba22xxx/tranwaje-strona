@@ -33,6 +33,7 @@ button {
   border: none;
   border-radius: 10px;
   background-color: rgb(105, 110, 240);
+  color: white;
   padding: 10px 20px; /* Changed comma to space */
   cursor: pointer;
   transition: all 1s ease;
