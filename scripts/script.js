@@ -1,21 +1,32 @@
-function hideCookies() {
-  // Pobranie elementów tutaj, aby upewnić się, że są dostępne globalnie dla obu funkcji
-  var blockdown1 = document.getElementById("container");
-  var blockdown2 = document.getElementsByClassName("cookies")[0]; // Dostęp do pierwszego elementu zwróconego przez getElementsByClassName
+// Funkcja sprawdzająca, czy użytkownik wcześniej zaakceptował ciasteczka
+function checkCookiesAccepted() {
+  return document.cookie.includes("cookiesAccepted=true");
+}
 
-  // Ukrycie elementów
+// Funkcja ukrywająca komunikat o ciasteczkach i ustawiająca ciasteczko informujące o zaakceptowaniu
+function hideCookies() {
+  var blockdown1 = document.getElementById("container");
+  var blockdown2 = document.getElementsByClassName("cookies")[0];
+
   blockdown1.style.display = 'none';
   blockdown2.style.display = 'none';
+
+  // Ustawienie ciasteczka informującego o zaakceptowaniu ciasteczek
+  document.cookie = "cookiesAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
 }
 
-// Przypisanie funkcji hideCookies do zdarzenia onclick przycisku confirmButton
-var button1 = document.getElementById("confirmButton");
-if (button1) { // Upewnij się, że element istnieje, zanim przypiszesz do niego zdarzenie
-  button1.onclick = hideCookies; // Brak nawiasów, aby przypisać funkcję, a nie jej wynik
-}
+// Sprawdzenie, czy użytkownik już zaakceptował ciasteczka
+if (!checkCookiesAccepted()) {
+  var button1 = document.getElementById("confirmButton");
+  if (button1) {
+    button1.onclick = hideCookies;
+  }
 
-// Przypisanie funkcji hideCookies do zdarzenia onclick przycisku declineButton
-var button2 = document.getElementById("declineButton");
-if (button2) { // Analogicznie jak wyżej
-  button2.onclick = hideCookies; // Możesz użyć tej samej funkcji, jeśli zachowanie ma być identyczne
+  var button2 = document.getElementById("declineButton");
+  if (button2) {
+    button2.onclick = hideCookies;
+  }
+} else {
+  // Jeśli użytkownik już zaakceptował ciasteczka, ukryj komunikat od razu
+  hideCookies();
 }
