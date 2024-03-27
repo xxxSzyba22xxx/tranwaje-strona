@@ -13,4 +13,10 @@ button1.addEventListener('click', () => {
     blockdown2.style.display = 'none'; 
   });
 
+button2.addEventListener('click', () => {
+
+    blockdown1.style.display = 'none'; 
+    blockdown2.style.display = 'none'; 
+  });
+
 }
