@@ -2,7 +2,7 @@
   background-color: #ffffff; /* Biały kolor tła */
   color: #000000; /* Czarny kolor tekstu */
   padding: 10px; /* Wewnętrzny odstęp dla lepszego wyglądu */
-  float: right; /* Ustawienie elementu z prawej strony */
+  float: left; /* Ustawienie elementu z prawej strony */
 }
 
 #top a {
