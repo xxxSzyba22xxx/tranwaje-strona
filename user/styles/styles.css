@@ -38,7 +38,7 @@ button:hover {
 
 #login {
   display: block;
-  background-color: rgba(19, 3, 98, 0.5); /* Poprawka: Poprawienie wartości alpha */
+  background-color: whitesmoke; /* Poprawka: Poprawienie wartości alpha */
   border: none;
   border-radius: 10px;
   width: 50%; /* Poprawka: Dodanie procentowego znaku */
