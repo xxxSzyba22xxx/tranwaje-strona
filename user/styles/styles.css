@@ -5,7 +5,7 @@ background: linear-gradient(135deg, rgba(16, 36, 135, 0.6), rgba(4, 34, 185, 0.5
 input {
 border: none;
 border-radius: 10px;
-padding: 10px, 20px;
+padding: 20px, 20px;
 background-color: rgba(10, 6, 125, 0.8);
 color: white;
 transition: all 0.5s ease;
