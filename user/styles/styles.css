@@ -5,10 +5,10 @@ html[theme="dark-blue"] {
 input {
   border: none;
   border-radius: 10px;
-  padding: 20px 20px; /* Poprawka: Zmiana przecinka na spację */
+  padding: 10px 20px; /* Poprawka: Zmiana przecinka na spację */
   background-color: rgba(10, 6, 125, 0.8);
   color: white;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   cursor: pointer;
 }
 
@@ -17,7 +17,7 @@ input:hover {
 }
 
 input:focus {
-  width: 200px;
+  width: 500px;
 }
 
 button {
