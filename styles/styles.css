@@ -29,6 +29,10 @@
   background-color: rgba(80, 80, 80, 0.6);
 }
 
+.separation {
+margin-top: 10px
+}
+
 body {
   font-family: Arial, sans-serif;
 }
