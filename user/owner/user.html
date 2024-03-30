@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konto właściciela</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div id="firstscreen">
+      <h1>Powitanie</h1>
+      <p>Witamy nowego użytkownika! Na tej stronie możesz zarządzać stroną</p>
+      <p>Czy chciałbyś sprersonalizować swój profil?</p>
+      <button onclick="gotoPersonlization()">Tak</button>
+      <button onclick="dont()">Nie</button>
+    </div>
+    <div id="firstscreen2">
+      <h1>Na początek...</h1>
+      <p>Ustawmy tło!</p>
+      <p>Jeśli chcesz ustawić tło, naciśnij na któryś z nich i kliknij dalej.</p>
+      <label for="changeBackgroundToBlack">Ciemny</label>
+      <img src="assets/photos/blacktheme.jpg"><input type="chceckbox" id="changeBackgroundToBlack">
+      <label for="changeBackgroundToWhite">Jasny</label>
+      <img src="assets/photos/whitetheme.jpg"><input type="chceckbox" id="changeBackgroundToWhite">
+    </div>
+    <script src="scripts/theme.js"></script>
+  </body>
+</html>
