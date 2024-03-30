@@ -1,7 +1,7 @@
 // Funkcja przełączająca między pierwszym a drugim blokiem
 function gotoPersonlization() {
-  document.getElementById('firstscreen').style.display = 'none';
-  document.getElementById('firstscreen2').style.display = 'block';
+  document.getElementById('firstscreen').style.display = 'block';
+  document.getElementById('firstscreen2').style.display = 'none';
 }
 
 // Funkcja obsługująca przypadki, gdy użytkownik nie chce spersonalizować
