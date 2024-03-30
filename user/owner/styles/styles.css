@@ -6,6 +6,10 @@ body[theme="dark"] {
   background-color: rgb(73, 73, 73);
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
 button {
   border: none;
   border-radius: 10px;
