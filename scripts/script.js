@@ -30,3 +30,10 @@ if (!checkCookiesAccepted()) {
   // Jeśli użytkownik już zaakceptował ciasteczka, ukryj komunikat od razu
   hideCookies();
 }
+
+function panelKlienta() {
+  var button = document.getElementById("loginButton");
+  window.location.href = "https://tranwaje-strona.pages.dev/user/login";
+}
+
+button.onclick = panelKlienta();
