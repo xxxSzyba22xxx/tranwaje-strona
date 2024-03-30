@@ -1,7 +1,7 @@
-// Funkcja przełączająca między pierwszym a drugim blokiem
+document.getElementById('main').style.display = 'none';
 function gotoPersonlization() {
-  document.getElementById('firstscreen').style.display = 'block';
-  document.getElementById('firstscreen2').style.display = 'none';
+  document.getElementById('firstscreen').style.display = 'none';
+  document.getElementById('firstscreen2').style.display = 'block';
 }
 
 // Funkcja obsługująca przypadki, gdy użytkownik nie chce spersonalizować
@@ -56,7 +56,8 @@ if (!checkCookiesAccepted()) {
 } else {
   // Jeśli użytkownik już zaakceptował ciasteczka, ukryj komunikat od razu i przełącz na drugi blok
   document.getElementById('firstscreen').style.display = 'none';
-  document.getElementById('firstscreen2').style.display = 'block';
+  document.getElementById('firstscreen2').style.display = 'none';
+  document.getElementById('main').style.display = 'block';
 }
 
 // Obsługa zmiany tła strony na czarne lub białe
