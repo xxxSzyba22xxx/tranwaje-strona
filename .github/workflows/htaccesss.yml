@@ -1,9 +1,7 @@
-        - name: Htaccess CLI
-  # You may pin to the exact commit or the version.
-  # uses: madewithlove/htaccess-cli-github-action@4f2d187f1ce23e751fbf59aa7018b810fb610c56
-  uses: madewithlove/htaccess-cli-github-action@v1.0.0
+- name: Htaccess CLI
+  uses: xxxSzyba22xxx/tranwaje-strona@v1.0.0
   with:
     # The url to test the htaccess file against
-    url: 
+    url: 'https://example.com'
     # The url you expect as output, CI will fail if this is not the real result
-    expected-url: 
+    expected-url: ''
