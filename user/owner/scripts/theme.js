@@ -1,6 +1,6 @@
       function gotoPersonlization() {
-        document.getElementById('firstscreen').style.display = 'none';
-        document.getElementById('firstscreen2').style.display = 'block';
+        document.getElementById('firstscreen').style.display = 'block';
+        document.getElementById('firstscreen2').style.display = 'none';
       }
 
       function dont() {
