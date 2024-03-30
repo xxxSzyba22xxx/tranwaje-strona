@@ -1,7 +1,0 @@
-- name: Htaccess CLI
-  uses: xxxSzyba22xxx/tranwaje-strona@v1.0.0
-  with:
-    # The url to test the htaccess file against
-    url: 'https://example.com'
-    # The url you expect as output, CI will fail if this is not the real result
-    expected-url: ''
