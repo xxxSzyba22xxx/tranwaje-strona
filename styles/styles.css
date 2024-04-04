@@ -45,11 +45,6 @@ margin-top: 10px
 
 /* Dodajemy style dla body, aby zapewnić pełną wysokość strony */
 html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: Arial, sans-serif;
 }
 
@@ -60,6 +55,7 @@ html, body {
   width: 40px;
   height: 40px;
   animation: spin 2s linear infinite;
+  display: flex;
 }
 
 @keyframes spin {
