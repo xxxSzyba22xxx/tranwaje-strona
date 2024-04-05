@@ -32,7 +32,6 @@ if (!checkCookiesAccepted()) {
 }
 
 function panelKlienta() {
-  var button = document.getElementById("loginButton");
   window.location.href = "https://tranwaje-strona.pages.dev/user/login";
 }
 
@@ -59,5 +58,6 @@ function addLoader() {
 // Wywołujemy funkcję dodawania loadera
 addLoader();
 
-
-button.onclick = panelKlienta();
+var button = document.getElementById("loginButton");
+// Przypisujemy funkcję panelKlienta do zdarzenia onclick bez jej wywoływania
+button.onclick = panelKlienta;
