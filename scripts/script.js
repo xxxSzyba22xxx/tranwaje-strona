@@ -1,6 +1,4 @@
-
-var main = document.getElementById("main");
-
+// Funkcja sprawdzająca, czy użytkownik wcześniej zaakceptował ciasteczka
 function checkCookiesAccepted() {
   return document.cookie.includes("cookiesAccepted=true");
 }
@@ -39,7 +37,10 @@ function panelKlienta() {
 
 // Tworzymy funkcję do dodawania loadera
 function addLoader() {
+  var main = document.getElementById("main");
   main.style.display = 'none';
+  
+  // Tworzymy element loadera
   var loader = document.createElement("div");
   loader.className = "loader";
   
@@ -54,12 +55,12 @@ function addLoader() {
   // Używamy setTimeout() do usunięcia loadera po 3 sekundach
   setTimeout(function() {
     document.body.removeChild(loaderContainer);
+    main.style.display = 'block'; // Po usunięciu loadera pokazujemy główną zawartość
   }, 3000);
 }
 
 // Wywołujemy funkcję dodawania loadera
 addLoader();
-  main.style.display = 'block';
 
 var button = document.getElementById("loginButton");
 // Przypisujemy funkcję panelKlienta do zdarzenia onclick bez jej wywoływania
