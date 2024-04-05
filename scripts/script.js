@@ -1,4 +1,6 @@
-// Funkcja sprawdzająca, czy użytkownik wcześniej zaakceptował ciasteczka
+
+var main = document.getElementById("main");
+
 function checkCookiesAccepted() {
   return document.cookie.includes("cookiesAccepted=true");
 }
@@ -37,7 +39,7 @@ function panelKlienta() {
 
 // Tworzymy funkcję do dodawania loadera
 function addLoader() {
-  // Tworzymy element loadera
+  main.style.display = 'none';
   var loader = document.createElement("div");
   loader.className = "loader";
   
@@ -57,6 +59,7 @@ function addLoader() {
 
 // Wywołujemy funkcję dodawania loadera
 addLoader();
+  main.style.display = 'block';
 
 var button = document.getElementById("loginButton");
 // Przypisujemy funkcję panelKlienta do zdarzenia onclick bez jej wywoływania
