@@ -36,4 +36,28 @@ function panelKlienta() {
   window.location.href = "https://tranwaje-strona.pages.dev/user/login";
 }
 
+// Tworzymy funkcję do dodawania loadera
+function addLoader() {
+  // Tworzymy element loadera
+  var loader = document.createElement("div");
+  loader.className = "loader";
+  
+  // Tworzymy kontener dla loadera i dodajemy do niego loader
+  var loaderContainer = document.createElement("div");
+  loaderContainer.className = "loader-container";
+  loaderContainer.appendChild(loader);
+  
+  // Dodajemy loaderContainer do ciała dokumentu
+  document.body.appendChild(loaderContainer);
+  
+  // Używamy setTimeout() do usunięcia loadera po 3 sekundach
+  setTimeout(function() {
+    document.body.removeChild(loaderContainer);
+  }, 3000);
+}
+
+// Wywołujemy funkcję dodawania loadera
+addLoader();
+
+
 button.onclick = panelKlienta();
